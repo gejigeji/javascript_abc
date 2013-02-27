@@ -1,0 +1,17 @@
+p {
+    color: black;
+    font-family: "arial", sans-serif;
+    font-size: 1.2em;
+}
+
+body {
+    color: black;
+    background-color: #f5f5f5;
+}
+
+#purchases {
+    border: 1px solid white;
+    background-color: #333;
+    color: #ccc;
+    padding: 1em;
+}

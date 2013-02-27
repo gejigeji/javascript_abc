@@ -1,0 +1,26 @@
+<html>
+    <head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+	<title>Shopping list</title>
+	<script type="text/javascript" src="world.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+	<h1>What to buy</h1>
+	<p title="a gentle reminder">Don't forget to buy this stuff.</p>
+	<ul id="purchases">
+	    <li text="test">A tin of beans</li>
+	    <li>Cheese</li>
+	    <li>Milk</li>
+	</ul>
+	<script type="text/javascript">
+	    var shopping = document.getElementById("purchases");
+	    var items = shopping.getElementsByTagName("*");
+	    alert(items.length);
+	    for (var i=0; i < items.length; i++) {
+		var li_text = items[i].getAttribute("text");
+		if (li_text) alert(li_text);
+	    }
+	</script>
+    </body>
+</html>
